@@ -19,7 +19,7 @@ fn main() {
     println!("Khi khai báo biến trong phạm vi khác thì biến cũ vấn ở đó, chứ ko bị biến mất, bị che phủ thôi");
 
     // DATA TYPEs
-
+    // Gồm có scala và compound
     // Scalar
         //Integer
     let x = 100;
@@ -44,4 +44,27 @@ fn main() {
     let remainder = 43%4;
     println!("remainder: {}", remainder);
 
+
+    // Compound --- gồm tuple và array
+    // tuple gồm nhiều kiểu dữ liệu
+    let tup = ("hello", 100_000);
+    println!("{:?}", tup);
+    let (_string, _integer) = tup;
+    let _integer = tup.1;
+    println!("{}",_string);
+    println!("{}",_integer);
+
+    // array là 1 danh sách có kích thước cố định và cùng 1 kiểu dữ liệu
+    let numbers = [100,200,300];
+    let get_number = numbers[2];
+    println!("{}",get_number);
+    
+    // tạo ra 1 mảng có 32 số 0, chú ý dấu phẩy và dấu chấm phẩy
+
+    let _hashing = [0;32];
+
+    println!("{:?}", _hashing);
+    for i in _hashing.iter(){
+        print!("{}",i);
+    }
 }
