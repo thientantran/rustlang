@@ -45,7 +45,7 @@ fn main() {
     println!("remainder: {}", remainder);
 
 
-    // Compound --- gồm tuple và array
+    // Compoun --- gồm tuple và array
     // tuple gồm nhiều kiểu dữ liệu
     let tup = ("hello", 100_000);
     println!("{:?}", tup);
@@ -68,4 +68,5 @@ fn main() {
         print!("{}",i);
     }
     println!("TAN DEP TRAI");
+    println!("TEST");
 }
