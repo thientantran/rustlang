@@ -68,5 +68,4 @@ fn main() {
         print!("{}",i);
     }
     println!("TAN DEP TRAI");
-    println!("TEST");
 }
